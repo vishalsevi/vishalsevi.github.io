@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS Website Layout</title>
+    <title>Sevi Consulting Limited</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -11,7 +11,7 @@
 
         /* Style the header */
         .header {
-            background-color: #f1f1f1;
+            background-color: white;
             padding: 5px;
             text-align: left;
         }
@@ -27,12 +27,42 @@
             margin: auto;
             padding: 10px;
         }
+
+
+    div.horizontal-blocks {
+        border: 1px solid #eb072d;
+        font-size: 15px;
+        text-align: center; 
+        vertical-align: middle;
+        height: 100px;
+        margin: 5px;
+    }
+
+    #container {
+        height: 100%; 
+        width:100%; 
+        display: flex;
+    }
+
+    #left {
+        width: 33%; 
+    }
+
+    #middle {
+        width: 33%;
+         
+    }
+
+    #right {
+        width: 33%; 
+    }
+
     </style>
 </head>
 <body>
     <div class="content">
         <div class="header">
-            <h1>Sevi Consulting Limited</h1>
+            <img src="logo.jpg" alt="Sevi Consulting Limited" width="150" height="108">
         </div>
 
         <div class="sub-header">
@@ -41,15 +71,22 @@
                 I am a Scrum Master and Agile Delivery Manager with experience of working on number of successful digital transformation projects with multiple client teams. I am very passionate about use of various lean and agile principles for delivering complex projects that exceeds customer expectations. I have strong facilitation and coaching skills required to ensure that the team is continuously improving through reflection and developing insight leading to improved performance and predictability in their deliverable to the customer. I have a good understanding of the best engineering practices of continuous integration and delivery. I am a strong believer of servant-leadership principles and using them I have helped number of cross-functional teams to improve on their path to increased agility
             </p>
         </div>
-
         <div class="sub-header">
             <h2>How can we help...</h2>
-            <h3>Agile Delivery Management</h3>
-            <h3>Digital Transformation</h3>
-            <h3>Team Coaching</h3>
         </div>
-
+        <div id="container">
+            <div id="left" class="horizontal-blocks">
+                <h3>Agile Delivery Management</h3>
+            </div>
+            <div id="middle" class="horizontal-blocks">
+                <h3>Digital Transformation</h3>
+            </div>
+            <div id="right" class="horizontal-blocks">
+                <h3>Team Coaching</h3>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
 
