@@ -14,8 +14,14 @@
             background-color: white;
             padding: 5px;
             text-align: left;
+            width: 33%;
         }
 
+        .middle-background {
+            background-color: blue;
+
+        }
+        
         /* Style the sub-header */
         .main-header {
             padding: 5px;
@@ -25,6 +31,18 @@
             background-color: white;
         }
 
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align:center;
+            padding: 10px;
+            font-size:12px;
+            color:white;
+            background-color: #000047;
+        }        
+        
         .para {
             padding: 5px;
             text-align:left;
@@ -43,7 +61,12 @@
             padding: 10px;
         }
 
-
+        .container-header {
+            height: 125px; 
+            width:100%; 
+            display: flex;
+        }
+    
     div.horizontal-blocks {
         border-top: 1px solid #eb072d;
         border-bottom: 1px solid #eb072d;
@@ -77,11 +100,12 @@
 </head>
 <body>
     <div class="content">
-        <div class="header">
-            <img src="Logo.jpg" alt="Sevi Consulting Limited" width="150" height="108">
+        <div class="container-header">
+            <div class="header">
+                <img src="Logo.jpg" alt="Sevi Consulting Limited" width="150" height="108">
+            </div>
         </div>
-
-        <div>
+        <div> 
             <h2 class="main-header">Digital transformation consulting and coaching</h2>
             <p class="para">
             We are an independent consultancy with a mission to help organisations achieve most from their digital transformation initiatives. Many digital transformation initiatives attempt to implement "agile" practices for the sake of it. Our approach is based on an understanding that agile isn't one-size fits all solution to everything.
@@ -104,7 +128,11 @@
                 <h3>Team Coaching</h3>
             </div>
         </div>
+        <div class="footer">
+            Registered address for Sevi Consulting Limited: 85 Great Portland street, First Floor, London, W1W 7LT        
+        </div>   
     </div>
+ 
 
 </body>
 </html>
